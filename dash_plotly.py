@@ -19,8 +19,8 @@ server = app.server
 app.config.suppress_callback_exceptions = True
 
 # Import data
-# data = pd.read_csv('AB_NYC_2019.csv')
-data = pd.read_csv('https://raw.githubusercontent.com/sabkad/airBnB/main/AB_NYC_2019.csv', encoding='latin')
+data = pd.read_csv('AB_NYC_2019.csv')
+# data = pd.read_csv('https://raw.githubusercontent.com/sabkad/airBnB/main/AB_NYC_2019.csv', encoding='latin')
 
 # Data preparation 
 data.reviews_per_month.fillna(0, inplace=True)
